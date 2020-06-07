@@ -8,6 +8,7 @@ import WrapperPureComponent from "./PureLayout/WrapperPureComponent";
 import ComponentRender from "./RenderComponent";
 import FibonacciNumber from "./Algorithms/FibonacciNumber";
 import ReduxToolkitComponent from "./ReduxToolkit/components";
+import RecoilComponent from "./Recoil";
 
 const ROUTES = [
   { path: "/", key: "ROOT", exact: true, component: Login },
@@ -66,6 +67,12 @@ const ROUTES = [
         key: "APP_REDUX_TOOLKIT",
         exact: true,
         component: () => <ReduxToolkitComponent />,
+      },
+      {
+        path: "/app/recoil",
+        key: "APP_RECOIL",
+        exact: true,
+        component: () => <RecoilComponent />,
       },
     ],
   },
